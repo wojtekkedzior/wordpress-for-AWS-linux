@@ -29,3 +29,8 @@ find /var/www -type d -exec sudo chmod 2775 {} +
 find /var/www -type f -exec sudo chmod 0664 {} +
 
 sudo usermod -a -G www apache
+
+cd /var/www/html
+sudo chown -R apache .
+
+
